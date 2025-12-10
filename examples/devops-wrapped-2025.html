@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>DevOps Wrapped 2025 — Aerlytix</title>
+
+	<link rel="stylesheet" href="../dist/reset.css">
+	<link rel="stylesheet" href="../dist/reveal.css">
+	<link rel="stylesheet" href="../dist/theme/league.css">
+	<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>DevOps Wrapped 2025</h1>
+				<p>Aerlytix SaaS · Year in Review</p>
+				<p style="font-size:0.8em;">Reliability · Velocity · Security · Developer Experience</p>
+			</section>
+
+			<section>
+				<h3>Mission & Scope</h3>
+				<ul>
+					<li>Keep Aerlytix customers always-on through resilient delivery pipelines.</li>
+					<li>Ship features faster by shrinking lead time and eliminating toil.</li>
+					<li>Secure the platform by default while giving teams safe self-service.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Platform Pulse (2025)</h3>
+				<div class="r-hstack" style="gap: 2rem;">
+					<div>
+						<h4>99.96%</h4>
+						<p>Prod uptime across regions</p>
+					</div>
+					<div>
+						<h4>18→9 hrs</h4>
+						<p>Mean incident time to resolution</p>
+					</div>
+					<div>
+						<h4>42%</h4>
+						<p>Cost per tenant reduction via rightsizing</p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h3>Reliability</h3>
+				<ul>
+					<li>Four nines (99.96%) production availability; zero Sev-1 sustained outages.</li>
+					<li>Golden signals monitored in all services; 14 new SLOs with burn alerts.</li>
+					<li>Game days each quarter validated failover runbooks and paging rotations.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Delivery Velocity</h3>
+				<ul>
+					<li>Lead time: 2.8 hours p50 → 1.6 hours after pipeline pruning.</li>
+					<li>Deployment frequency: +35% YoY (avg 48 prod deploys/week).</li>
+					<li>Change fail rate: down to 5.2% after staged rollouts and automated rollbacks.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Automation & CI/CD</h3>
+				<ul>
+					<li>Unified `deploy` workflow for all services; blue/green now default.</li>
+					<li>Cache-aware builds trimmed 23% off CI runtime; flaky test quarantine dashboard.</li>
+					<li>Policy as code enforced for secrets, RBAC, and IaC drift checks.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Observability & Quality</h3>
+				<ul>
+					<li>Tracing coverage at 88%; logs normalized to OpenTelemetry schema.</li>
+					<li>Pre-merge quality gates: lint, unit, contract, and smoke suites per service.</li>
+					<li>Feature flag guardrails: auto-expire after 30 days with owner reminders.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Security & Compliance</h3>
+				<ul>
+					<li>SBOMs generated on every build; SCA and SAST run in CI with severity gating.</li>
+					<li>Secret scanning + commit signing mandated for core repos.</li>
+					<li>Quarterly pen-test fixes closed within 14 days; ISO/SOC evidence automated.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Infrastructure & Cost</h3>
+				<ul>
+					<li>Kubernetes node pools right-sized; autoscaling tuned for bursty analytics jobs.</li>
+					<li>Adopted ARM where supported; storage tiering cut cold data spend by 38%.</li>
+					<li>Terraform modules standardized; 92% of stacks now codified.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Developer Experience</h3>
+				<ul>
+					<li>Spin-up time for preview environments: 18 minutes → 7 minutes.</li>
+					<li>Local stacks use shared mocks and seed data; `make dev` parity with prod contracts.</li>
+					<li>Playbooks added for on-call handoffs, incident comms, and feature flags.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Looking Ahead (2026)</h3>
+				<ul>
+					<li>Self-serve chaos experiments in non-prod with opt-in budgets.</li>
+					<li>Error budget policies tied to launch gates for new products.</li>
+					<li>Full GitOps rollout for config drift prevention and auditability.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Thank you!</h2>
+				<p>Questions, highlights, and shout-outs?</p>
+			</section>
+		</div>
+	</div>
+
+	<script src="../dist/reveal.js"></script>
+	<script src="../plugin/notes/notes.js"></script>
+	<script src="../plugin/markdown/markdown.js"></script>
+	<script src="../plugin/highlight/highlight.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		});
+	</script>
+</body>
+</html>

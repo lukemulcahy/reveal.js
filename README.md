@@ -17,6 +17,14 @@ Want to create reveal.js presentation in a graphical editor? Try <https://slides
 
 ---
 
+### Local development (pnpm)
+- Install dependencies: `pnpm install` (Node 18+).
+- Start live-reload dev server: `pnpm start`.
+- Build distributables: `pnpm run build`.
+- Run lint + tests: `pnpm test`.
+
+---
+
 ### Getting started
 - 🚀 [Install reveal.js](https://revealjs.com/installation)
 - 👀 [View the demo presentation](https://revealjs.com/demo)
